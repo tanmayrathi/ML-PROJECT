@@ -34,6 +34,12 @@ The following classification algorithms were implemented and evaluated:
 4. Random Forest
 5. Support Vector Machine (SVM)
 6. Naive Bayes
+7. Gradient Boosting
+8. AdaBoost
+9. Extra Trees
+10. XGBoost
+11. Linear Discriminant Analysis
+12. Quadratic Discriminant Analysis
 
 ## Tools and Libraries
 
