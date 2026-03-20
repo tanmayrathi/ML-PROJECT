@@ -1,29 +1,29 @@
 # ML-PROJECT
-# Iris Dataset Classification using Machine Learning
+# Stroke Prediction using Machine Learning
 
 ## Project Overview
 
-This project demonstrates the implementation of multiple machine learning classification algorithms on the famous **Iris dataset**. The goal is to train models that can correctly classify iris flowers into their respective species based on features such as sepal length, sepal width, petal length, and petal width.
+This project focuses on predicting the likelihood of a patient having a stroke using various machine learning classification algorithms. The goal is to build models that can analyze patient health data and accurately predict stroke risk.
 
-The Iris dataset is one of the most widely used datasets for learning and testing classification algorithms in machine learning.
+Stroke prediction is a critical healthcare application where early detection can help in preventing severe medical conditions and saving lives.
 
 ## Dataset
+The dataset contains medical and demographic information of patients. The target variable indicates whether the patient has had a stroke or not.
+Features include:
+.Age
+.Gender
+.Hypertension
+.Heart Disease
+.Marital Status
+.Work Type
+.Residence Type
+.Average Glucose Level
+.Body Mass Index (BMI)
+.Smoking Status
 
-The **Iris dataset** contains information about three species of iris flowers:
-
-* Setosa
-* Versicolor
-* Virginica
-
-Each sample contains four features:
-
-* Sepal Length
-* Sepal Width
-* Petal Length
-* Petal Width
-
-Total samples: **150**
-
+Target:
+0 → No Stroke
+1 → Stroke
 ## Machine Learning Models Used
 
 The following classification algorithms were implemented and evaluated:
@@ -55,21 +55,30 @@ The project uses the following Python libraries:
 ## Project Workflow
 
 The workflow followed in this project includes:
-
-1. Loading the Iris dataset
-2. Data preprocessing and exploration
-3. Splitting dataset into training and testing sets
-4. Training different machine learning models
-5. Evaluating model performance using accuracy score
-6. Comparing results of different algorithms
+.Load the stroke dataset
+.Handle missing values (especially BMI)
+.Encode categorical variables
+.Perform exploratory data analysis (EDA)
+.Handle class imbalance (if required using SMOTE or undersampling)
+.Split dataset into training and testing sets
+.Train multiple machine learning models
+.Evaluate models using accuracy, precision, recall, and F1-score
+.Compare performance of different algorithms
 
 ## Objective
 
-The objective of this project is to understand how different machine learning algorithms perform on the same dataset and compare their classification accuracy.
+The objective of this project is to:
+.Predict the probability of stroke occurrence
+.Compare different machine learning models
+.Understand the impact of health factors on stroke risk
+.Build a healthcare-focused ML application
 
 ## Results
 
-All models were trained and tested on the Iris dataset. The results show that multiple algorithms can achieve high accuracy due to the well-structured nature of the dataset.
+-Models were trained and evaluated on the dataset
+-Due to class imbalance, accuracy alone is not sufficient
+-Metrics like Precision, Recall, and F1-score provide better insights
+-Ensemble models like Random Forest and Gradient Boosting performed well
 
 ## How to Run the Project
 
@@ -80,18 +89,17 @@ All models were trained and tested on the Iris dataset. The results show that mu
 Example:
 
 ```bash
-git clone https://github.com/yourusername/iris-classification.git
-cd iris-classification
+git clone https://github.com/yourusername/stroke-prediction.git
+cd stroke-prediction
 python iris_models.py
 ```
 
 ## Applications
-
-* Learning machine learning classification techniques
-* Understanding model comparison
-* Educational purposes for data science beginners
+*Early stroke risk prediction
+*Healthcare decision support systems
+*Preventive medical analysis
+*Educational machine learning project
 
 ## Author
-
-This project was created as part of learning and practicing machine learning concepts using the Iris dataset.
+This project was developed as part of learning and applying machine learning techniques in healthcare.
 
